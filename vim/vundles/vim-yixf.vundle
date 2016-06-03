@@ -1,0 +1,9 @@
+"wakatime mess up the screen
+"Bundle "wakatime/vim-wakatime"
+Bundle "nelstrom/vim-markdown-folding"
+"Bundle "suan/vim-instant-markdown"
+"Bundle "JamshedVesuna/vim-markdown-preview"
+"Bundle "Valloric/YouCompleteMe"
+Bundle "vim-scripts/fcitx.vim"
+"Bundle "gerw/vim-latex-suite"
+Bundle "lervag/vimtex"
