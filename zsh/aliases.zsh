@@ -243,3 +243,6 @@ alias yd='proxychains youtube-dl'
 alias mk="latexmk -pdf -pvc -xelatex"
 alias mc="latexmk -c"
 
+# Git
+alias glz='git zlog'
+

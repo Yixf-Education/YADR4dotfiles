@@ -51,6 +51,7 @@
   short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
   simple = log --pretty=format:\" * %s\"
   shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+  zlog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
   # pull
   pl = pull                         # pull
@@ -112,6 +113,7 @@
   autocrlf = false
   editor = vim
   excludesfile = ~/.yadr/git/gitignore
+  quotepath = false # 设置显示中文文件名
 [advice]
   statusHints = false
 [diff]
