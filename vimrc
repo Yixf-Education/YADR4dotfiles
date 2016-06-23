@@ -152,4 +152,12 @@ if has('gui_running')
   endif
 endif
 
+" 使用相对行号
+set number
+set relativenumber
+" 使gj/gk在没有计数的时候按虚拟行移动，有计数的时候按实际行移动（这和相对行数是绝配）
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+xnoremap <expr> j (v:count == 0 && mode() !=# 'V') ? 'gj' : 'j'
+xnoremap <expr> k (v:count == 0 && mode() !=# 'V') ? 'gk' : 'k'
 
