@@ -247,3 +247,6 @@ alias mc="latexmk -c"
 # Git
 alias glz='git zlog'
 
+# Pygments
+alias cat='pygmentize -O style=tango -f console256 -g'
+
