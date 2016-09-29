@@ -74,4 +74,5 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 export PATH="/home/yixf/bin:$PATH"
+export PATH="/home/yixf/Circos/current/bin:$PATH"
 
