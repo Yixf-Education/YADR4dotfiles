@@ -2,23 +2,38 @@ priority -20
 
 
 
+snippet pu "use warnings strict utf8"
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use utf8;
+
+
+endsnippet
+
+snippet md "make directory"
+mkdir $${1:do} unless -d $$1;
+
+endsnippet
+
 snippet fi "Open file for input"
 my $${1:fi} = "${2:# input filename}";
-open  my $${3:I}, '<', $$1
-	or die  "\$0 : failed to open  input file '$$1' : $!\n";
+open my $${3:I}, '<', $$1 or die "\$0 : failed to open input file '$$1' : $!\n";
 $4
-close  $$3
-	or warn "\$0 : failed to close input file '$$1' : $!\n";
+close $$3 or warn "\$0 : failed to close input file '$$1' : $!\n";
 
+endsnippet
+
+snippet sf "split columns to array"
+my @${1:f} = split /${2:\t}/, ${3:$_};
 endsnippet
 
 snippet fo "Open file for output"
 my $${1:fo} = "${2:# output filename}";
-open  my $${3:O}, '>', $$1
-	or die  "\$0 : failed to open  output file '$$1' : $!\n";
+open my $${3:O}, '>', $$1 or die "\$0 : failed to open output file '$$1' : $!\n";
 $4
-close  $$3
-	or warn "\$0 : failed to close output file '$$1' : $!\n";
+close $$3 or warn "\$0 : failed to close output file '$$1' : $!\n";
 
 endsnippet
 
@@ -36,7 +51,6 @@ foreach my $${1:x} (@${2:array}) {
 }
 
 endsnippet
-
 
 
 # vim:ft=snippets:
